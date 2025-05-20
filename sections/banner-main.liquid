@@ -1,0 +1,46 @@
+{% schema %}
+  {
+    "name": "Banner main",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "mostrar_banner",
+        "label": "¿Mostrar banner?",
+        "default": true
+      }, {
+        "type": "text",
+        "id": "titulo",
+        "label": "Título del banner",
+        "default": "Bienvenido a nuestra tienda"
+      }, {
+        "type": "textarea",
+        "id": "descripcion",
+        "label": "Descripción del banner",
+        "default": "Aprovecha nuestras ofertas por tiempo limitado."
+      }, {
+        "type": "image_picker",
+        "id": "imagen_banner",
+        "label": "Imagen del banner"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner main",
+        "category": "Banners"
+      }
+    ]
+  }
+{% endschema %}
+
+{% if section.settings.mostrar_banner %}
+  <div class="banner-con-switch" style="text-align:center; padding: 20px; background-color: #f6f6f6;">
+    {% if section.settings.imagen_banner %}
+      <img
+        src="{{ section.settings.imagen_banner | image_url: width: 1200 }}"
+        alt="Imagen del banner"
+        style="max-width: 100%; height: auto;">
+    {% endif %}
+    <h2>{{ section.settings.titulo }}</h2>
+    <p>{{ section.settings.descripcion }}</p>
+  </div>
+{% endif %}
