@@ -396,6 +396,16 @@
         "padding_top": 44,
         "padding_bottom": 48
       }
+    },
+    "banner_main_wQM3Mr": {
+      "type": "banner-main",
+      "name": "Banner main",
+      "settings": {
+        "mostrar_banner": true,
+        "titulo": "Bienvenido a nuestra tienda",
+        "descripcion": "Aprovecha nuestras ofertas por tiempo limitado.",
+        "imagen_banner": "shopify://shop_images/las-mejores-laptops-para-diseno-grafico-01.webp"
+      }
     }
   },
   "order": [
@@ -406,6 +416,7 @@
     "collection_list",
     "multicolumn1",
     "featured_collection2",
-    "multicolumn2"
+    "multicolumn2",
+    "banner_main_wQM3Mr"
   ]
 }
