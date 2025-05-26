@@ -124,6 +124,13 @@
           data-cascade
         {% endif %}
       >
+        {% for tag in product.tags %}
+          {% if tag contains 'Entrega:' %}
+            <span class="badge">{{ tag | remove: 'Entrega: ' }}</span>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+    
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -233,7 +240,7 @@
           "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
         }
       ]
-    },    
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
