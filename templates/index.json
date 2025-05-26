@@ -334,69 +334,6 @@
         "padding_bottom": 52
       }
     },
-    "multicolumn2": {
-      "type": "multicolumn",
-      "blocks": {
-        "column11": {
-          "type": "column",
-          "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
-          }
-        },
-        "column12": {
-          "type": "column",
-          "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
-          }
-        },
-        "column13": {
-          "type": "column",
-          "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
-          }
-        },
-        "column14": {
-          "type": "column",
-          "settings": {
-            "title": "Add educational content",
-            "text": "<p>Provide content for your customers that sets their business up for success</p>",
-            "link_label": "Read now",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column11",
-        "column12",
-        "column13",
-        "column14"
-      ],
-      "settings": {
-        "title": "You're set up for success",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-3",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 48
-      }
-    },
     "banner_main_wQM3Mr": {
       "type": "banner-main",
       "name": "Banner main",
@@ -416,7 +353,6 @@
     "collection_list",
     "multicolumn1",
     "featured_collection2",
-    "multicolumn2",
     "banner_main_wQM3Mr"
   ]
 }
