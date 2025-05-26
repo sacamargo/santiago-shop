@@ -621,4 +621,13 @@
       </div>
     </div>
   </div>
+
+  {% assign delivery_tags = 'Delivery: Immediate,Delivery: 6 hours,Delivery: Next day' | split: ',' %}
+
+  {% for tag in product.tags %}
+    {% if delivery_tags contains tag %}
+      <span class="badge">{{ tag | remove: 'Delivery: ' }}</span>
+      {% break %}
+    {% endif %}
+  {% endfor %}
 {%- endif -%}
