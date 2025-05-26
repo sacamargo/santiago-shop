@@ -14,21 +14,18 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
-        },
-        "custom_liquid_YYR7iX": {
-          "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign delivery_tags = 'Delivery: Immediate,Delivery: 6 hours,Delivery: Next day' | split: ',' %}\n\n        {% for tag in product.tags %}\n          {% if delivery_tags contains tag %}\n            <span class=\"badge\">{{ tag | remove: 'Delivery: ' }}</span>\n            {% break %}\n          {% endif %}\n        {% endfor %}"
           }
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
@@ -67,7 +64,6 @@
       "block_order": [
         "title",
         "price",
-        "custom_liquid_YYR7iX",
         "description",
         "collapsible-row-1",
         "collapsible-row-0",
@@ -81,9 +77,9 @@
         "constrain_to_viewport": false,
         "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
-        "mobile_thumbnails": "hide",
         "media_position": "right",
         "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -108,13 +104,13 @@
         "heading_size": "h2",
         "products_to_show": 5,
         "columns_desktop": 5,
-        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 44
       }

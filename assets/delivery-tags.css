@@ -1,0 +1,31 @@
+.delivery-tag {
+    margin-top: 5px;
+}
+
+.delivery-badge {
+    display         : inline-block;
+    padding         : 3px 8px;
+    font-size       : 0.85em;
+    border-radius   : 4px;
+    font-weight     : 500;
+    background-color: #f8f9fa;
+    border          : 1px solid #e9ecef;
+}
+
+.delivery-immediate {
+    background-color: #d4edda;
+    color           : #155724;
+    border-color    : #c3e6cb;
+}
+
+.delivery-hours {
+    background-color: #fff3cd;
+    color           : #856404;
+    border-color    : #ffeeba;
+}
+
+.delivery-nextday {
+    background-color: #d1ecf1;
+    color           : #0c5460;
+    border-color    : #bee5eb;
+}

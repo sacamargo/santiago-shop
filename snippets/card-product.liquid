@@ -160,6 +160,18 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          {%- if card_product.tags != blank -%}
+            {%- for tag in card_product.tags -%}
+              {%- if tag contains 'Delivery:' -%}
+                <div class="delivery-tag">
+                  <span class="delivery-badge{% if tag contains 'Immediate' %} delivery-immediate{% elsif tag contains '6 hours' %} delivery-hours{% elsif tag contains 'Next day' %} delivery-nextday{% endif %}">
+                    {{ tag }}
+                  </span>
+                </div>
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -621,13 +633,4 @@
       </div>
     </div>
   </div>
-
-  {% assign delivery_tags = 'Delivery: Immediate,Delivery: 6 hours,Delivery: Next day' | split: ',' %}
-
-  {% for tag in product.tags %}
-    {% if delivery_tags contains tag %}
-      <span class="badge">{{ tag | remove: 'Delivery: ' }}</span>
-      {% break %}
-    {% endif %}
-  {% endfor %}
 {%- endif -%}
