@@ -560,6 +560,21 @@
             </div>
           {% endif %}
         {% endif %}
+        <div class="variant-thumbs">
+        {% for variant in card_product.variants %}
+          {% if variant.image %}
+            <img
+              src="{{ variant.image | image_url: width: 100 }}"
+              alt="{{ variant.title }}"
+              width="40"
+              height="40"
+              class="variant-thumb"
+              style="cursor: pointer; border-radius: 4px; margin-right: 5px;"
+              onclick="updateImage({{ card_product.id }}, '{{ variant.image | image_url: width: 400 }}')"
+            >
+          {% endif %}
+        {% endfor %}
+        </div>
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span
@@ -634,3 +649,39 @@
     </div>
   </div>
 {%- endif -%}
+
+<style>
+.variant-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.variant-thumb {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+  object-fit: cover;
+}
+
+.variant-thumb:hover {
+  border-color: var(--color-base-accent-1);
+}
+</style>
+
+<script>
+function updateImage(productId, imageUrl) {
+  const productCard = document.querySelector(`[id*="${productId}"]`).closest('.card-wrapper');
+  if (productCard) {
+    const mainImages = productCard.querySelectorAll('.media img');
+    mainImages.forEach(img => {
+      img.srcset = '';
+      img.src = imageUrl;
+    });
+  }
+}
+</script>
