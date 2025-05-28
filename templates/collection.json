@@ -17,11 +17,35 @@
         "color_scheme": "scheme-1"
       }
     },
+    "1748454470c4254648": {
+      "type": "apps",
+      "blocks": {
+        "advanced_toolbar_filter_collection_g7h3BL": {
+          "type": "shopify://apps/advanced-toolbar/blocks/filter-collection/f01927af-bf95-4830-8832-337c0b9941e5",
+          "settings": {
+            "target_collection": "las-mejores-laptops",
+            "show_search": true,
+            "show_availability": true,
+            "show_price_filter": true,
+            "show_tags": true,
+            "show_sort": true,
+            "show_product_count": true
+          }
+        }
+      },
+      "block_order": [
+        "advanced_toolbar_filter_collection_g7h3BL"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 20,
         "columns_desktop": 5,
+        "columns_mobile": "2",
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -32,7 +56,6 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -40,6 +63,7 @@
   },
   "order": [
     "banner",
+    "1748454470c4254648",
     "product-grid"
   ]
 }
