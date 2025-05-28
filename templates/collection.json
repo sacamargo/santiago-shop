@@ -20,21 +20,15 @@
     "1748454470c4254648": {
       "type": "apps",
       "blocks": {
-        "advanced_toolbar_filter_collection_g7h3BL": {
-          "type": "shopify://apps/advanced-toolbar/blocks/filter-collection/f01927af-bf95-4830-8832-337c0b9941e5",
+        "toolbar_filters_filter_bar_4cRCzG": {
+          "type": "shopify://apps/toolbar-filters/blocks/filter-bar/4947acfe-e231-4002-90f3-3cc84861f3e4",
           "settings": {
-            "target_collection": "las-mejores-laptops",
-            "show_search": true,
-            "show_availability": true,
-            "show_price_filter": true,
-            "show_tags": true,
-            "show_sort": true,
-            "show_product_count": true
+            "search_placeholder": "Buscar productos..."
           }
         }
       },
       "block_order": [
-        "advanced_toolbar_filter_collection_g7h3BL"
+        "toolbar_filters_filter_bar_4cRCzG"
       ],
       "settings": {
         "include_margins": true
