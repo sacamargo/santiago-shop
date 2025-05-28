@@ -47,9 +47,9 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "bulk",
-        "enable_filtering": true,
+        "enable_filtering": false,
         "filter_type": "horizontal",
-        "enable_sorting": true,
+        "enable_sorting": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
