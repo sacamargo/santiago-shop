@@ -20,20 +20,13 @@
     "1748454470c4254648": {
       "type": "apps",
       "blocks": {
-        "toolbar_filter_filter_toolbar_CfWrfh": {
+        "toolbar_filter_filter_toolbar_FEN9Tx": {
           "type": "shopify://apps/toolbar-filter/blocks/filter-toolbar/c8d18a8d-de75-404e-9dda-f121d9c2874c",
-          "settings": {
-            "show_search": true,
-            "show_sort": true,
-            "show_price_filter": true,
-            "show_availability": true,
-            "show_tags": true,
-            "price_range_step": 500
-          }
+          "settings": {}
         }
       },
       "block_order": [
-        "toolbar_filter_filter_toolbar_CfWrfh"
+        "toolbar_filter_filter_toolbar_FEN9Tx"
       ],
       "settings": {
         "include_margins": true
